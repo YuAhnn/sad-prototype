@@ -3,5 +3,5 @@ build/
 dist/
 .firebase/
 .env
-functions/.env
+ai/.env
 .DS_Store
