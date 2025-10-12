@@ -1,12 +1,12 @@
 import { useState } from "react";
 import logo  from '../assets/compass-logo.svg'
 import { Link } from "react-router-dom";
-import { Sun, Moon, Menu, X} from 'lucide-react';
+import { Sun, Moon, Menu, X, FileText, FileCheck, UserRoundPlus, CircleQuestionMark } from 'lucide-react';
 
 const NavLinks = [
-  { label: "Articles", path: '/articles' },
-  { label: "Assessments", path: '/assessment' },
-  { label: "Referral", path: '/referral' }
+  { label: "Articles", path: '/articles', logo: <FileText size={30}/> },
+  { label: "Assessments", path: '/assessment', logo: <FileCheck  size={30}/>},
+  { label: "Referral", path: '/referral', logo: <UserRoundPlus  size={30}/> }
 ];
 
 export default function NavBar() {
@@ -61,7 +61,7 @@ export default function NavBar() {
           </div>
           <div className={`fixed top-0 w-[70%] h-full border-r border-r-gray-300 bg-[#ffffff] ease-in-out duration-700
                           ${sideBar ? 'left-0' : 'left-[-100%]'} lg:hidden `}>
-            <div className="mt-10">
+            <div className="mt-10 ml-2">
               <Link to="/">
                 <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2" />
               </Link>
@@ -71,15 +71,24 @@ export default function NavBar() {
                 <li key={index} className="">
                   <Link 
                     to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform">
-                    {link.label}
+                   
+                    <div className="flex justify-start items-center">
+                      <div>{link.logo}</div>
+                      <div className="ml-6">{link.label}</div>
+                    </div>
                   </Link>
                 </li>
               ))}
             </ul>
-              <Link to="/about"  className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform">About</Link>
+             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform">
+              <div className="flex justify-start items-center">
+                <div> <CircleQuestionMark size={30} /> </div>
+                <div className="ml-6">About</div>
+              </div>
+            </Link>
               <aside className="absolute bottom-10 left-5">
-                <button onClick={handleTheme} className="block active:-scale-150 hover:shadow-md bg-white  p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
-                  {theme ? <Moon  size={25} /> : <Sun size={25} />}
+                <button onClick={handleTheme} className="block active:-scale-150 hover:shadow-md bg-white  p-2 rounded-full cursor-pointer transition ease-in-out border-1 border-gray-400">
+                  {theme ? <Moon  size={30} /> : <Sun size={30} />}
                 </button>
               </aside>
           </div>
