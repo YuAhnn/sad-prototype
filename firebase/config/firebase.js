@@ -1,5 +1,3 @@
-import { initializeApp } from "firebase/app";
-
 const firebaseConfig = {
 
   apiKey: import.meta.env.VITE_FB_KEY,
@@ -12,4 +10,4 @@ const firebaseConfig = {
 
 };
 
-const app = initializeApp(firebaseConfig);
+export default firebaseConfig;
