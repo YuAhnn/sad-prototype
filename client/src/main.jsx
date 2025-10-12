@@ -13,13 +13,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const isDevelopment = import.meta.env.MODE === "development"
 
 root.render(
-
-  isDevelopment ? (
-    <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  ) : (
-    <App/>
-  ) 
-
+  isDevelopment ? ( <React.StrictMode> <App /> </React.StrictMode> ) : ( <App/> ) 
 )
