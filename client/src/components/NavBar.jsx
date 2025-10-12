@@ -58,11 +58,11 @@ export default function NavBar() {
             <Link to="/about" className="hidden lg:block bg-[#3fb185] text-white px-4 py-3 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] active:-scale-200">About</Link>
           </div>
           <div className="mr-5">
-            <button onClick={handleTheme} className="hidden md:block active:-scale-200 hover:shadow-md bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
+            <button onClick={handleTheme} className="hidden md:block active:-scale-150 hover:shadow-md bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
             {theme ? <Sun size={25} /> : <Moon  size={25} />}
           </button>
           </div>
-          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-200 hover:shadow-md hover:bg-[#3fb185] hover:text-white p-2 rounded-full duration-300 ease-in-out">
+          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-150 hover:shadow-md hover:bg-[#3fb185] hover:text-white p-2 rounded-full duration-300 ease-in-out">
           {!sideBar ? <Menu size={25}/> : <X size={25}/>}
           </div>
         </div>
