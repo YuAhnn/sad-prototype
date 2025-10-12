@@ -31,7 +31,7 @@ export default function NavBar() {
     </div>
       <div className="flex-2">
        <div className="flex justify-center">
-         <div className="bg-white mr-6 px-2 py-6 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
+         <div className="bg-white mr-20 px-2 py-6 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
           <ul className="flex justify-evenly items-center">
           {NavLinks.map((link, index) => (
             <li key={index}>
