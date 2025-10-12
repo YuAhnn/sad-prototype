@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style/index.css'
 import App from './App.jsx'
-import { BrowserRouter as Router } from 'react-dom/client'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import { initializeApp } from "firebase/app";
 import firebaseConfig from '../../firebase/config/firebase.js';
