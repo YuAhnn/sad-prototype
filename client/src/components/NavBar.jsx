@@ -24,14 +24,14 @@ export default function NavBar() {
 
   return (
     <nav className="flex justify-between items-center h-35 max-w-[1240px] mx-auto">
-     <div className="flex- 1">
+     <div className="flex-0.5">
       <Link to="/">
         <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2" />
       </Link>
     </div>
       <div className="flex-2">
        <div className="flex justify-center">
-         <div className="bg-white px-2 py-7 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
+         <div className="bg-white mr-6 px-2 py-6 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
           <ul className="flex justify-evenly items-center">
           {NavLinks.map((link, index) => (
             <li key={index}>
