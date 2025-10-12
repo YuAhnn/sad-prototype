@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo  from '../assets/compass-logo.svg'
 import { Link } from "react-router-dom";
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon, Menu, X} from 'lucide-react';
 
 const NavLinks = [
   { label: "Articles", path: '/articles' },
@@ -12,21 +12,28 @@ const NavLinks = [
 export default function NavBar() {
 
     const[theme, setTheme] = useState(false)
+    const[sideBar, setSideBar] = useState(false)
 
     const handleTheme = () => {
         setTheme(!theme)
     }
 
+    const handleSideBar = () => {
+        setSideBar(!sideBar)
+    }
+
   return (
-    <nav className="flex flex-wrap justify-around items-center px-[14%] pt-[2%] max-[1240px] mx-auto">
+    <nav className="flex justify-between items-center h-35 max-w-[1240px] mx-auto">
       
-      <div className="flex-1 mb-2">
-          <Link to="/"> <img src={logo} alt="Compass" width={245} /> </Link>
-      </div>
-      
+     <div className="flex- 1">
+      <Link to="/">
+        <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2" />
+      </Link>
+    </div>
+
       <div className="flex-2">
        <div className="flex justify-center">
-         <div className="bg-white px-2 py-7 w-[550px] rounded-full drop-shadow-sm">
+         <div className="bg-white px-2 py-7 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
         
           <ul className="flex justify-evenly items-center">
 
@@ -45,19 +52,22 @@ export default function NavBar() {
        </div>
       </div>
       
-      <div className="flex-1">
+      <div className="flex-0.5">
         <div className="flex justify-evenly items-center">
-          <div className="ml-20">
-            <Link to="/about" className="bg-[#3fb185] text-white px-4 py-3 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185]">About</Link>
+          <div className="ml-4 mr-4">
+            <Link to="/about" className="hidden lg:block bg-[#3fb185] text-white px-4 py-3 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] active:-scale-200">About</Link>
           </div>
-          <div className="mr-10">
-            <button onClick={handleTheme} className="bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
+          <div className="mr-5">
+            <button onClick={handleTheme} className="hidden md:block active:-scale-200 hover:shadow-md bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
             {theme ? <Sun size={25} /> : <Moon  size={25} />}
           </button>
           </div>
+          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-200 hover:shadow-md hover:bg-[#3fb185] hover:text-white p-2 rounded-full duration-300 ease-in-out">
+          {!sideBar ? <Menu size={25}/> : <X size={25}/>}
+          </div>
         </div>
       </div>
-
+      
     </nav>
   );
 }
