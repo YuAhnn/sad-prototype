@@ -1,6 +1,6 @@
-import BentoGrid from "../components/BentoGrid"
-import Hero from "../components/Hero"
-import NavBar from "../components/NavBar"
+import BentoGrid from "../ui/BentoGrid"
+import Hero from "../ui/Hero"
+import NavBar from "../ui/NavBar"
 
 export default function LandingPage() {
     return(
