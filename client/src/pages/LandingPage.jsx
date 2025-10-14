@@ -2,6 +2,7 @@ import BentoGrid from "../ui/BentoGrid"
 import Hero from "../ui/Hero"
 import NavBar from "../ui/NavBar"
 import AboutSection from "../ui/AboutSection"
+import SecondHero from "../ui/SecondHero"
 export default function LandingPage() {
     return(
         <>
@@ -9,6 +10,7 @@ export default function LandingPage() {
             <Hero/>
             <BentoGrid/>
             <AboutSection/>
+            <SecondHero/>
         </>
     )
 }
