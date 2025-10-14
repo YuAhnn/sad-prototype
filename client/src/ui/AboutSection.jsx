@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function AboutSection() {
     return(
      <div className="w-full bg-[white] px-4">
-        <div className="max-w-[1240px] mt-20 mx-auto grid grid-cols-1 md:grid-cols-2">         
+        <div className="max-w-[1200px] mt-60 mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-15">         
             <div className="flex flex-col justify-evenly">
                 <p className='bg-[#daefe6] text-[#3fb185] w-[150px] h-[45px] font-bold text-lg text-center pt-2 rounded-full'>About Us</p>
                 <div>
@@ -17,7 +17,6 @@ export default function AboutSection() {
                 </div>
                 <Link to="/about" className="bg-[#3fb185] text-white w-[200px] rounded-full font-medium text-center mt-6 mx-auto md:mx-0 py-3 cursor-pointer hover:bg-[#daefe6] hover:text-[#3fb185] transition-transform duration-300 hover:scale-103">Learn More</Link>
             </div>
-            
             <img src={AboutLogo} alt="/portfolio"   className="cursor-pointer w-[350px] sm:w-[400px] lg:w-[500px] mx-auto my-4 rounded-3xl drop-shadow-xl border-gray-200 border-1"/>
         </div>
     </div>
