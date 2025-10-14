@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function SecondHero() {
     return(
         <div className="pt-60" >
-            <div className="max-w-[1000px] mt-[90px] w-full h-[500px] mx-auto flex flex-col items-center justify-center">
+            <div className="max-w-[1000px] mt-[80px] w-full h-[600px] mx-auto flex flex-col items-center justify-center">
                 <h1 className="text-[28px] sm:text-5xl md:text-5xl font-black md:py-2 text-center leading-14">Let's start your</h1>
                 <h1 className="text-[28px] sm:text-5xl md:text-5xl font-black md:py-2 text-center leading-tight">Wellness Journey</h1>
                 <p className="text-xs sm:text-xm md:text-[15px]  text-[#4f4f4fe0] font-normal py-2">Come explore a safe space made for you well-being</p>

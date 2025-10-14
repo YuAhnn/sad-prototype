@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function AboutSection() {
     return(
-     <div className="w-full bg-[white] px-4">
+     <div className="w-full px-4">
         <div className="max-w-[1200px] mt-60 mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-15">         
             <div className="flex flex-col justify-evenly">
                 <p className='bg-[#daefe6] text-[#3fb185] w-[150px] h-[45px] font-bold text-lg text-center pt-2 rounded-full'>About Us</p>
