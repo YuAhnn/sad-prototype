@@ -6,7 +6,7 @@ export default function AssessmentDynaPage() {
     const { toolId } = useParams()
 
     const assessmentComponents = {
-        "depression": lazy(() => import('../components/Depression'))
+        "depression": lazy(() => import('../Instruments/Depression'))
     }
 
     const Assessment = assessmentComponents[toolId]
