@@ -3,6 +3,8 @@ import Hero from "../ui/Hero"
 import NavBar from "../ui/NavBar"
 import AboutSection from "../ui/AboutSection"
 import SecondHero from "../ui/SecondHero"
+import Footer from "../ui/Footer"
+
 export default function LandingPage() {
     return(
         <>
@@ -11,6 +13,7 @@ export default function LandingPage() {
             <BentoGrid/>
             <AboutSection/>
             <SecondHero/>
+            <Footer/>
         </>
     )
 }
