@@ -1,6 +1,6 @@
-import { useState } from "react";
 import logo  from '../assets/compass-logo.svg'
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 import { Sun, Moon, Menu, X, FileText, FileCheck, UserRoundPlus, CircleQuestionMark } from 'lucide-react';
 
 const NavLinks = [
