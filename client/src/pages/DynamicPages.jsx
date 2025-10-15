@@ -1,7 +1,8 @@
 import { Suspense, lazy} from "react"
 import { useParams } from "react-router-dom"
+import ErrorPage from "./ErrorPage"
 
-export default function AssessmentDynaPage() {
+export default function DynamicPages() {
 
     const { toolId } = useParams()
 
@@ -12,7 +13,7 @@ export default function AssessmentDynaPage() {
     const Assessment = assessmentComponents[toolId]
 
     if (!Assessment) {
-        return <div>Assessment not found</div>
+        return <ErrorPage/>
     }
 
     return(
