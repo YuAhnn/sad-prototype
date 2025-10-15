@@ -5,20 +5,18 @@ import LoadingPage from './LoadingPage'
 import ErrorPage from './ErrorPage';
 import Photo from '../assets/illus.png';
 import Card from '../components/Card';
+import { fetchTools } from '../firebase/db'
 
-import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../firebase/firebase';
 export default function AssessmentPage() {
   const [tools, setTools] = useState([]);
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    const fetchTools = async () => {
+    const fetchData = async () => {
       try {
-        const toolDocs = await getDocs(collection(db, 'tests'));
-        const toolList = toolDocs.docs.map(doc => doc.data());
-        setTools(toolList);
+        const data = await fetchTools()
+        setTools(data)
       } catch (error) {
         console.error("Error fetching tools:", error);
         setError(error)
@@ -27,7 +25,7 @@ export default function AssessmentPage() {
       }
     };
 
-    fetchTools();
+    fetchData();
   }, []);
 
   if(loading) return <LoadingPage/>
