@@ -16,9 +16,9 @@ export default function AssessmentPage() {
   useEffect(() => {
     const fetchTools = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, 'tests'));
-        const toolsList = querySnapshot.docs.map(doc => doc.data());
-        setTools(toolsList);
+        const toolDocs = await getDocs(collection(db, 'tests'));
+        const toolList = toolDocs.docs.map(doc => doc.data());
+        setTools(toolList);
       } catch (error) {
         console.error("Error fetching tools:", error);
         setError(error)
@@ -32,6 +32,7 @@ export default function AssessmentPage() {
 
   if(loading) return <LoadingPage/>
   if(error) return <ErrorPage/>
+  
   return (
     <>
       <NavBar />
