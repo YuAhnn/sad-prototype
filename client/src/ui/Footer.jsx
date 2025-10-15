@@ -1,6 +1,6 @@
 export default function Footer() {
     return(
-        <footer className="bg-[#eaecef] h-full flex flex-col justify-evenly items-center py-10">
+        <footer className="relative bottom-0 z-[-1] bg-[#eaecef] h-full flex flex-col justify-evenly items-center py-10">
             <div>
                 <p className="font-bold text-center">Compass © 2025</p>
                 <p className="text-gray-800 mt-2">For individuals 18 years old and above</p>
