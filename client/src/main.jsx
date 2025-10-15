@@ -4,15 +4,10 @@ import './style/index.css'
 import App from './App.jsx'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import { initializeApp } from "firebase/app";
-import firebaseConfig from '../../firebase/config/firebase.js';
-
-initializeApp(firebaseConfig)
-
 const root = ReactDOM.createRoot(document.getElementById('root')); 
 
 const isDevelopment = import.meta.env.MODE === "development"
 
 root.render(
-  isDevelopment ? ( <Router> <React.StrictMode> <App /> </React.StrictMode> </Router> ) : ( <App/> ) 
+  isDevelopment ? ( <Router> <React.StrictMode> <App /> </React.StrictMode> </Router> ) : ( <Router> <App/> </Router> ) 
 )
