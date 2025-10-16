@@ -6,7 +6,7 @@ import AssessmentPage from "./pages/AssessmentPage"
 import DynamicPages from "./pages/DynamicPages"
 import ReferralPage from "./pages/ReferralPage"
 import AboutPage from "./pages/AboutPage"
-import ErrorPage from "./pages/ErrorPage"
+import Error from "./components/Error"
 
 export default function App() {
   return(
@@ -18,7 +18,7 @@ export default function App() {
       <Route path="/assessment/:toolId" element={<DynamicPages/>}/>
       <Route path="/referral" element={<ReferralPage/>}/>
       <Route path="/about" element={<AboutPage/>}/>
-      <Route path="*" element={<ErrorPage/>}/>
+      <Route path="*" element={<Error/>}/>
     </Routes>
     </>
   )
