@@ -5,7 +5,7 @@ import Loading from '../components/Loading'
 import Error from '../components/Error';
 import Photo from '../assets/illus.png';
 import Card from '../components/Card';
-import { fetchTools } from '../firebase/db'
+import { fetchTests } from '../firebase/db'
 
 export default function AssessmentPage() {
   const [tools, setTools] = useState([]);
@@ -15,7 +15,7 @@ export default function AssessmentPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetchTools()
+        const data = await fetchTests()
         setTools(data)
       } catch (error) {
         console.error("Error fetching tools:", error);
@@ -34,7 +34,6 @@ export default function AssessmentPage() {
   return (
     <>
       <NavBar />
-
       <figure className="flex justify-center mt-20 px-5">
         <div className="relative z-[-1] w-full max-w-[1250px]">
           <img src={Photo} alt="Illustration" className="w-[600px] h-[300px] brightness-90 sm:w-full lg:w-full lg:brightness-100 lg:h-auto lg:object-contain rounded-4xl" />
@@ -47,21 +46,22 @@ export default function AssessmentPage() {
 
       <main className="flex justify-center mt-10 px-5 py-15">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
           {tools.map(tool => (
             <Card
               key={tool.toolId}
               icon={tool.icon}
-              iconProps={tool.iconProps || { size: 60, color: "#4b5563" }}
+              iconProps={tool.iconProps}
               alt={tool.title}
               instrument={{ name: tool.title }}
               text={tool.description}
               toolId={`/assessment/${tool.toolId}`}
-              buttonText={tool.buttonText || "Start"}
+              buttonText={tool.buttonText}
             />
           ))}
+
         </div>
       </main>
-
       <Footer />
     </>
   );

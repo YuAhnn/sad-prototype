@@ -1,24 +1,39 @@
-import { Suspense, lazy} from "react"
-import { useParams } from "react-router-dom"
-import Error from "../components/Error"
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { fetchToolByToolId } from "../firebase/db";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
+import Form from "../components/Form";
 
 export default function DynamicPages() {
+  const { toolId } = useParams();
+  const [assessment, setAssessment] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
-    const { toolId } = useParams()
+  useEffect(() => {
+    const fetchDataForm = async () => {
+      try {
+        const data = await fetchToolByToolId(toolId);
+        setAssessment(data);
 
-    const assessmentComponents = {
-        "depression": lazy(() => import('../Instruments/Depression'))
-    }
+        console.log(toolId);
+        console.log("DATA: ", data);
 
-    const Assessment = assessmentComponents[toolId]
+      } catch (error) {
+        console.error("ERROR: ", error);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    if (!Assessment) {
-        return <Error/>
-    }
+    fetchDataForm();
 
-    return(
-       <Suspense fallback={<div>Loading assessment...</div>}>
-         <Assessment/>
-       </Suspense>
-    )
+  }, [toolId]);
+
+  if (loading) return <Loading />;
+  if (error) return <Error />;
+
+  return <Form assessment={assessment} />;
 }
