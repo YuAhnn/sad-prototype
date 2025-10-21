@@ -26,12 +26,14 @@ export default function NavBar() {
     <nav className="flex justify-between items-center h-35 max-w-[1240px] mx-auto">
      <div className="flex-0.5">
       <Link to="/">
-        <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2" />
+        <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 transition-transform duration-200 hover:scale-[.95]" />
       </Link>
     </div>
+
       <div className="flex-2">
        <div className="flex justify-center">
          <div className="bg-white mr-20 px-2 py-6 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
+
           <ul className="flex justify-evenly items-center">
           {NavLinks.map((link, index) => (
             <li key={index}>
@@ -42,9 +44,11 @@ export default function NavBar() {
             </li>
           ))}
           </ul>
+
         </div>
        </div>
       </div>
+
       <div className="flex-0.5">
         <div className="flex justify-evenly items-center">
           <div className="ml-4 mr-4">
