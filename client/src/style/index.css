@@ -10,25 +10,14 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-
-#ok {
-    animation: textColorChange 4s ease infinite; 
+#loading{
+    animation: textColorChange 3s ease infinite;
 }
 
 @keyframes textColorChange {
-    0% {
-         color: #3fb185; 
-    }
-    25% {
-        color:rgb(132, 192, 150)
-    }
-    50% {
-        color: #3fb185; 
-    }
-    75%{
-        color:rgb(132, 192, 150);
-    }
-    100% {
-        color: #3fb185; 
-    }
+    0% {color: #3fb185;}
+    25% {color:#3fb185a9;}
+    50% {color: #3fb185}
+    75%{color:#3fb185a9;}
+    100% {color: #3fb185;}
 }
