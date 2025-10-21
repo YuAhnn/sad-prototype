@@ -1,0 +1,7 @@
+node_modules/
+build/
+dist/
+.firebase/
+.env
+ai/.env
+.DS_Store
