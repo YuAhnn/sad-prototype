@@ -1,0 +1,77 @@
+[33m9649863[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m :))
+[33m8648ffd[m Update
+[33m58778a6[m add ai folder
+[33md45fbf4[m Trying to display retrieved dataa(unofficial)
+[33mfad9bfc[m Fix + Feat: apply dynamic page to fetch data, returning certain assessmentsss:))
+[33mb42c4d2[m Fix & Update + Feat: Add fetchToolByToolId function to retrieve data w/ its Document Id & dataa
+[33mb5d437f[m Updates: File paths & fix phone design
+[33mbcaada5[m Style: Update
+[33m0206168[m Update: apply function to retrieve data
+[33m2069fb0[m Feat: add function to fetch dataa only for card comp. in Assessment page
+[33m70e1a8d[m fix
+[33mc03c64f[m Feat: Add gemini.js
+[33m061e4ca[m Feat: styled-components dependency:))
+[33mba1566b[m UPDATE: FIX ENV VARs
+[33me675d94[m Updates: just variable namesss
+[33m8fd55e2[m Fix & Update Card component w/ Dynamic Icons
+[33mfd9f237[m Style: loading animation from styled-components:))
+[33mce8854a[m ADD: dotenv:))
+[33m5c61eb9[m Update: remove init fb
+[33me23f069[m Add: Loading component
+[33m537e3fe[m Still the same
+[33m21f0214[m Try
+[33m9b31898[m Add: idk
+[33mcb56c21[m Feat: Add Reusable Card Component for instruments
+[33m3237dde[m Add ui + unfinished responsive design
+[33m0358be2[m Style: Add animation- cant use tailwind config
+[33m2f92e5d[m Update: DynamicPage Route
+[33m2eaa36b[m Update: Rename
+[33m25f47b3[m Add Card component
+[33m824ade4[m Folder: Add instruments/tools
+[33mf7a9e96[m Feat: Add dynamic route
+[33m7e55282[m Style: Update
+[33maf426c5[m Add Footer
+[33m731fe24[m Add Footer
+[33mef90b75[m Add SecondHero
+[33m74b8385[m Add: SecondHero
+[33m650f11e[m Style: Update
+[33md39eb18[m Add: about section photo
+[33m402f49f[m Style: improved AboutSection
+[33mba30d55[m Style: improved
+[33m364c5e2[m Feat: PHQ-9 component
+[33mf53dcc1[m Update folder files
+[33m80a45f0[m Fix: file path
+[33m41c2efa[m File: Move ui components in ui folder
+[33m4e0c46f[m Fix: BentoBox -> BentoGrid
+[33m76a495d[m Feat: Add my-ugly BentoGrid
+[33m5a29b58[m Feat: Add BentoBox section
+[33ma10c1c2[m Style fix: container height
+[33m6bb50e3[m Style fix: phone responsiveness
+[33m10cb0f7[m Update
+[33m9236f1c[m Add Hero component
+[33m45ee55a[m Style: Add icons in sidebar
+[33m31f90e7[m Component: Add Hero-section
+[33ma7aa232[m style: adjust postion
+[33m8b7b92c[m Feat: Add sidebar
+[33m64607c1[m Changed title & icon
+[33m133e8ed[m Feat: responsive navBar
+[33madeae86[m style: About button hover
+[33m50bd8a7[m Feat: apply lucide-react icons
+[33m2afb5cc[m Feat: apply routes
+[33md1096ce[m Add Logo & Typeface
+[33m1fcf603[m Add Nav Component
+[33mf84306b[m Add Pages
+[33ma37a1d6[m Feat: Apply Router
+[33m95a66c7[m Refactor
+[33m7557a7a[m Feat: Apply recommended plugin @vitejs/plugin-react for improved performance
+[33m005a7a8[m Fix: FB config
+[33m1b036bc[m Fix: init firebase & Feat: apply strictmode only for dev mode
+[33m13eecb2[m Init Firebase in Client
+[33m9c1eeea[m Update md file w/ dev phases
+[33md379190[m fix file path
+[33m90561ce[m update fb config w/ env
+[33m5e7f636[m add ai folder
+[33m2cc6ad2[m remove firebase api - forget to hide:))
+[33m8d7f446[m setup client & firebase structure
+[33mb2c58fd[m setup client & firebase structure
+[33m544bbb3[m Add README
