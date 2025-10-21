@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-
-const LoadingPage = () => {
+//This component is from styled-components dependency
+export default function Loading(){
   return (
     <StyledWrapper>
       <svg className="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
@@ -181,4 +181,3 @@ const StyledWrapper = styled.div`
     }
   }
 `;
-export default LoadingPage;
