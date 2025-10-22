@@ -1,4 +1,4 @@
-import logo  from '../assets/compass-logo.svg'
+import logo  from '../assets/logo.svg'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import { Sun, Moon, Menu, X, FileText, FileCheck, UserRoundPlus, CircleQuestionMark } from 'lucide-react';
@@ -70,7 +70,7 @@ export default function NavBar() {
                 <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 active:scale-[.95]" />
               </Link>
             </div>
-            <ul className="mt-10">
+            <ul className="mt-10 border-t-1 border-gray-200">
               {NavLinks.map((link, index) => (
                 <li key={index} className="">
                   <Link 
