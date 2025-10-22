@@ -65,16 +65,16 @@ export default function NavBar() {
           </div>
           <div className={`fixed top-0 w-[70%] h-full border-r border-r-gray-300 bg-[#ffffff] ease-in-out duration-700
                           ${sideBar ? 'left-0' : 'left-[-100%]'} lg:hidden `}>
-            <div className="mt-10 ml-2">
+            <div className="mt-10 ml-4">
               <Link to="/">
                 <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 active:scale-[.95]" />
               </Link>
             </div>
-            <ul className="mt-10 border-t-1 border-gray-200">
+            <ul className="mt-10">
               {NavLinks.map((link, index) => (
-                <li key={index} className="">
+                <li key={index}>
                   <Link 
-                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform active:bg-[#3fb185] active:text-white">
+                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white mx-2 py-4 transform active:bg-[#3fb185] active:text-white rounded-full mb-2 border-gray-100 border-2">
                    
                     <div className="flex justify-start items-center">
                       <div>{link.logo}</div>
@@ -84,7 +84,7 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white px-4 py-4 transform">
+             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white  mx-2 py-4 rounded-full border-gray-100 border-2 transform">
               <div className="flex justify-start items-center">
                 <div> <CircleQuestionMark size={30} /> </div>
                 <div className="ml-6">About</div>
