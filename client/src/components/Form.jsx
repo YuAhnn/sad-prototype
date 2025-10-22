@@ -6,8 +6,6 @@ export default function Form({ assessment }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
 
-  const navigate = useNavigate()
-
   const handleSelect = (value) => {
     setAnswers((prev) => ({ ...prev, [currentQuestion]: value }));
   };
@@ -15,6 +13,8 @@ export default function Form({ assessment }) {
   const handleNext = () => {
       setCurrentQuestion((prev) => prev + 1);
   };
+
+  const navigate = useNavigate()
 
   const handleBack = () => {
     if (currentQuestion === 0) {
