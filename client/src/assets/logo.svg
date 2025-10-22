@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 200" role="img" aria-label="COMPASS logo">
+  <style>
+    .logo-text {
+      font-family: 'Montserrat', 'Poppins', 'Arial Black', sans-serif;
+      font-weight: 800;
+      font-size: 140px;
+      fill: #3fb185;
+      dominant-baseline: middle;
+    }
+
+    .needle {
+      transform-box: fill-box;
+      transform-origin: 50% 50%;
+      animation: rotate-needle 6s ease-in-out infinite;
+    }
+
+    @keyframes rotate-needle {
+      0%   { transform: rotate(-10deg); }
+      50%  { transform: rotate(180deg); }
+      100% { transform: rotate(-10deg); }
+    }
+  </style>
+
+  <!-- "C" -->
+  <text class="logo-text" x="95" y="135">C</text>
+
+  <!-- "O" replaced by compass -->
+  <g transform="translate(192,40)">
+    <!-- circle -->
+    <circle cx="75" cy="80" r="45" stroke="#3fb185" stroke-width="20" fill="none"/>
+
+    <!-- bigger needle -->
+    <g transform="translate(75,80)">
+      <g class="needle">
+        <path d="M0,-18 L9,0 L0,18 L-9,0 Z" fill="#3fb185"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- "MPASS" -->
+  <text class="logo-text" x="330" y="135">MPASS</text>
+</svg>
