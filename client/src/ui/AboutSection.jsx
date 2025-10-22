@@ -15,9 +15,9 @@ export default function AboutSection() {
                     While Compass encourages self-awareness, it does not replace professional mental health care.
                     </p>
                 </div>
-                <Link to="/about" className="bg-[#3fb185] text-white w-[200px] rounded-full font-medium text-center mt-6 mx-auto md:mx-0 py-3 cursor-pointer hover:bg-[#daefe6] hover:text-[#3fb185] transition-transform duration-300 hover:scale-103">Learn More</Link>
+                <Link to="/about" className="bg-[#3fb185] text-white w-[200px] rounded-full font-medium text-center mt-6 mx-auto md:mx-0 py-3 cursor-pointer hover:bg-[#daefe6] hover:text-[#3fb185] transition-transform duration-300 hover:scale-103 active:bg-[#daefe6] active:text-[#3fb185]">Learn More</Link>
             </div>
-            <img src={AboutLogo} alt="/compass"   className="relative z-[-1] cursor-pointer w-[350px] sm:w-[400px] lg:w-[500px] mx-auto my-4 rounded-3xl drop-shadow-xl border-gray-200 border-1"/>
+            <img src={AboutLogo} alt="/compass"   className="relative z-[-1] cursor-pointer w-[350px] sm:w-[400px] lg:w-[500px] mx-auto my-4 rounded-3xl drop-shadow-xl border-gray-200 border-1 "/>
         </div>
     </div>
     ) 

@@ -31,7 +31,7 @@ export default function Form({ assessment }) {
 
   return (
     <>
-      <section className="flex justify-start mt-2 h-[40px] px-[29%] pt-4">
+      <section className="flex justify-start mt-2 h-[40px] px-[2%] sm:px-[3%] md:px-[15%] lg:px-[25%] xl:px-[%20]pt-4">
           <button onClick={handleBack} className="text-xl hover:underline cursor-pointer">
             <ChevronLeft size={35}/>
           </button>

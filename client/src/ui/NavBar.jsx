@@ -26,7 +26,7 @@ export default function NavBar() {
     <nav className="flex justify-between items-center h-35 max-w-[1240px] mx-auto">
      <div className="flex-0.5">
       <Link to="/">
-        <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 transition-transform duration-200 hover:scale-[.95]" />
+        <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 transition-transform duration-200 hover:scale-[.95] active:scale-[.95]" />
       </Link>
     </div>
 
@@ -38,7 +38,7 @@ export default function NavBar() {
           {NavLinks.map((link, index) => (
             <li key={index}>
               <Link 
-                to={link.path} className="transition duration-350 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 rounded-full transform">
+                to={link.path} className="transition duration-350 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white hover:text-white px-4 py-4 rounded-full transform">
                 {link.label}
               </Link>
             </li>
@@ -60,21 +60,21 @@ export default function NavBar() {
           </button>
           </div>
           {/* sideBar */}
-          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-150 hover:shadow-md hover:bg-[#3fb185] hover:text-white p-2 rounded-full duration-300 ease-in-out">
+          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-150 hover:shadow-md active:bg-[#3fb185] hover:bg-[#3fb185] hover:text-white p-2 rounded-full duration-300 ease-in-out">
           {sideBar ?  <X size={25}/> : <Menu size={25}/>}
           </div>
           <div className={`fixed top-0 w-[70%] h-full border-r border-r-gray-300 bg-[#ffffff] ease-in-out duration-700
                           ${sideBar ? 'left-0' : 'left-[-100%]'} lg:hidden `}>
             <div className="mt-10 ml-2">
               <Link to="/">
-                <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2" />
+                <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 active:scale-[.95]" />
               </Link>
             </div>
             <ul className="mt-10">
               {NavLinks.map((link, index) => (
                 <li key={index} className="">
                   <Link 
-                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform">
+                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform active:bg-[#3fb185] active:text-white">
                    
                     <div className="flex justify-start items-center">
                       <div>{link.logo}</div>
@@ -84,7 +84,7 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] hover:text-white px-4 py-4 transform">
+             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white px-4 py-4 transform">
               <div className="flex justify-start items-center">
                 <div> <CircleQuestionMark size={30} /> </div>
                 <div className="ml-6">About</div>
