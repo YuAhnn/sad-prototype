@@ -1,8 +1,8 @@
 export default function Shadow( { component } ) {
   return (
     <>
-      <div className="relative border-t-2 border-t-gray-200 rounded-t-[60px] md:rounded-t-[80px] lg:rounded-t-[150px] w-full h-screen overflow-hidden">
-        <div className="relative bottom-35 z-100 flex items-center justify-center h-full">
+      <div className="relative border-t-2 border-t-gray-200 rounded-t-[60px] md:rounded-t-[80px] lg:rounded-t-[150px] w-full min-h-[80vh] max-h-screen overflow-hidden">
+        <div className="relative z-10 flex items-center justify-center h-full">
             {component}
         </div>
         <div
