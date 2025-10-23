@@ -8,7 +8,7 @@ export default function AboutSection() {
             <div className="flex flex-col justify-evenly">
                 <p className='bg-[#daefe6] text-[#3fb185] w-[150px] h-[45px] font-bold text-lg text-center pt-2 rounded-full'>About Us</p>
                 <div>
-                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-black py-2 mb-5">Compass</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-black py-2 mb-5 text-[#292828]">Compass</h1>
                     <p className="text-justify text-gray-700 ml-2 mr-5">
                     Compass is a web-based research project developed to promote emotional awareness. 
                     It offers guided assessments, resources, and supportive feedback to help individuals reflect on their well-being. 
