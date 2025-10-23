@@ -19,12 +19,16 @@
   <text class="logo-text" x="330" y="135">MPASS</text>
   
   <style>
+
     .logo-text {
-      font-family: sans-serif;
-      font-weight: 900;
-      font-size: 140px;
-      fill: #3fb185;
-      dominant-baseline: middle;
+        font-family: sans-serif;
+  	font-weight: 900;
+  	font-size: 140px;
+  	fill: #3fb185;
+  	stroke: #3fb185;
+  	stroke-width: 1px;
+  	paint-order: stroke fill;
+  	dominant-baseline: middle;
     }
 
     .needle {
