@@ -59,13 +59,13 @@ export default function NavBar() {
             {theme ? <Moon  size={25} /> : <Sun size={25} />}
           </button>
           </div>
-          {/* sideBar */}
           <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-150 hover:shadow-md active:bg-[#3fb185] hover:bg-[#3fb185] hover:text-white p-2 rounded-full duration-300 ease-in-out">
           {sideBar ?  <X size={25}/> : <Menu size={25}/>}
           </div>
-          <div className={`fixed top-0 w-[70%] h-full border-r border-r-gray-300 bg-[#ffffff] ease-in-out duration-700
+          {/* sideBar */}
+          <div className={`fixed z-[120] top-0 w-[70%] h-full border-r border-r-gray-300 bg-[#ffffff] ease-in-out duration-700
                           ${sideBar ? 'left-0' : 'left-[-100%]'} lg:hidden `}>
-            <div className="mt-10 ml-4">
+            <div className="mt-10 ml-1">
               <Link to="/">
                 <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 active:scale-[.95]" />
               </Link>
