@@ -34,19 +34,17 @@ export default function AssessmentPage() {
   
   return (
     <>
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
       <NavBar />
-
-      <figure className="flex justify-center mt-20 px-5">
-        <div className="relative z-[-1] w-full max-w-[1250px]">
-          <img src={Photo} alt="Illustration" className="w-[600px] h-[300px] brightness-90 sm:w-full lg:w-full lg:brightness-90 lg:h-auto lg:object-contain rounded-4xl" />
-          <section className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
-            <p className="font-black text-2xl sm:text-2xl md:text-4xl lg:text-6xl mb-6">Take a Step Towards Clarity</p>
-            <p className="font-bold text-[13px] lg:text-3xl">Choose a test - quick, free, confidential</p>
-          </section>
-        </div>
+      <figure className='bg-[#3fb185] min-w-screen  h-[350px] lg:h-[400px] shadow-lg'>
+          <div className='relative top-40'>
+            <section className='flex flex-col items-center justify-center'>
+              <p className='font-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white mb-5'>TAKE A STEP TOWARD CLARITY</p>
+              <p className='font-bold text-sm sm:text-lg md:xl lg:text-1xl xl:text-2xl text-white'>CHOOSE A TEST - QUICK, FREE, CONFIDENTIAL</p>
+            </section>
+          </div>
       </figure>
-
-      <main className="flex justify-center mt-10 px-5 py-15">
+      <main className="flex justify-center min-h-screen mt-10 px-5 py-15">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
           {tools.map(tool => (
@@ -65,7 +63,8 @@ export default function AssessmentPage() {
         </div>
       </main>
 
-      <Footer />
+      <Footer/>
+      </div>
     </>
   );
 }

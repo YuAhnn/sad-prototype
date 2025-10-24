@@ -23,7 +23,7 @@ export default function NavBar() {
     }
 
   return (
-    <nav className="flex justify-between items-center h-35 max-w-[1240px] mx-auto">
+    <nav className="relative flex items-center justify-between h-[80px] w-full bg-[#f9f9f9] px-2 sm:px-4 md:px-4 lg:px-1 xl:px-40 p-18">
      <div className="flex-0.5">
       <Link to="/">
         <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 transition-transform duration-200 hover:scale-[.95] active:scale-[.95]" />
@@ -70,11 +70,11 @@ export default function NavBar() {
                 <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 active:scale-[.95]" />
               </Link>
             </div>
-            <ul className="mt-10">
+            <ul className="mt-10 text-[#201f1fe0]">
               {NavLinks.map((link, index) => (
                 <li key={index}>
                   <Link 
-                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white mx-2 py-4 transform active:bg-[#3fb185] active:text-white rounded-full mb-2 border-1 border-gray-300">
+                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white mx-2 py-4 transform active:bg-[#3fb185] active:text-white rounded-full mb-2 border-1 border-gray-300 shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)]">
                    
                     <div className="flex justify-start items-center">
                       <div>{link.logo}</div>
@@ -84,7 +84,7 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white  mx-2 py-4 rounded-full border-1 border-gray-300 transform">
+             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white  mx-2 py-4 rounded-full border-1 border-gray-300 transform shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)] text-[#201f1fe0]">
               <div className="flex justify-start items-center">
                 <div> <CircleQuestionMark size={30} /> </div>
                 <div className="ml-6">About</div>

@@ -5,7 +5,7 @@ export default function Card({ icon, iconProps = {}, alt, instrument, text, tool
   const IconComponent = LucideIcons[icon];
 
   return (
-    <main className="p-10 rounded-xl border border-gray-200 shadow-lg bg-white leading-15 active:shadow-[0_4px_20px_rgba(63,177,133,0.3)]">
+    <main className="p-10 rounded-xl border border-gray-200 shadow-lg bg-white leading-15 active:shadow-[0_4px_20px_rgba(63,177,133,0.3)] h-70">
       <figure className="flex justify-center mb-6">
         {IconComponent ? ( <IconComponent {...iconProps} aria-label={alt} /> ) : ( <span className="text-gray-400 text-sm">Icon not found</span> )}
       </figure>
