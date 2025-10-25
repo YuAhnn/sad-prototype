@@ -10,14 +10,12 @@ import ShadowBottom from '../components/ShadowBottom'
 export default function LandingPage() {
     return(
         <>
-        <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
+        <div className="flex flex-col min-h-screen w-full overflow-x-hidden overflow-y-auto">
             <NavBar/>
-            <div>
                 <Shadow component={<Hero/>}/>
-                <BentoGrid/>
-                <AboutSection/>
+                    <BentoGrid/>
+                    <AboutSection/>
                 <ShadowBottom component={<SecondHero/>}/>
-            </div>
             <Footer/>
         </div>
         </>

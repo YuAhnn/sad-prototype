@@ -34,20 +34,25 @@ export default function AssessmentPage() {
   
   return (
     <>
-    <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden overflow-y-auto">
       <NavBar />
-      <figure className='bg-[#3fb185] min-w-screen  h-[350px] lg:h-[400px] shadow-lg'>
-          <div className='relative top-40'>
-            <section className='flex flex-col items-center justify-center'>
-              <p className='font-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white mb-5'>TAKE A STEP TOWARD CLARITY</p>
-              <p className='font-bold text-sm sm:text-lg md:xl lg:text-1xl xl:text-2xl text-white'>CHOOSE A TEST - QUICK, FREE, CONFIDENTIAL</p>
-            </section>
-          </div>
-      </figure>
-      <main className="flex justify-center min-h-screen mt-10 px-5 py-15">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-          {tools.map(tool => (
+      <figure className="bg-[#3fb185] w-screen min-h-[350px] lg:min-h-[400px] shadow-lg">
+        <div className="relative top-40">
+          <section className="flex flex-col items-center justify-center text-center px-4">
+            <p className="font-black text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white mb-5">
+              TAKE A STEP TOWARD CLARITY
+            </p>
+            <p className="font-bold text-[12px] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white">
+              CHOOSE A TEST — QUICK, FREE, CONFIDENTIAL
+            </p>
+          </section>
+        </div>
+      </figure>
+
+      <main className="flex justify-center min-h-screen mt-10 px-5 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {tools.map((tool) => (
             <Card
               key={tool.toolId}
               icon={tool.icon}
@@ -59,12 +64,11 @@ export default function AssessmentPage() {
               buttonText={tool.buttonText}
             />
           ))}
-
         </div>
       </main>
 
-      <Footer/>
-      </div>
+      <Footer />
+    </div>
     </>
   );
 }

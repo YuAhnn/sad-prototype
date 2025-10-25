@@ -1,13 +1,13 @@
 export default function Shadow( { component } ) {
   return (
     <>
-      <div className="relative border-t-2 border-t-gray-200 rounded-t-[60px] md:rounded-t-[80px] lg:rounded-t-[150px] w-full min-h-[80vh]">
+      <div className="relative border-t-2 border-t-gray-200 rounded-t-[60px] md:rounded-t-[80px] lg:rounded-t-[150px] w-full min-h-[80vh] overflow-visible">
         <div className="relative z-10 flex items-center justify-center h-full">
             {component}
         </div>
         <div
           className="
-            absolute z-[-1]
+            absolute z-[-1] pointer-events-none
             top-70 left-20
             lg:top-50 lg:left-40
             w-[150px] h-[150px]
@@ -28,7 +28,7 @@ export default function Shadow( { component } ) {
 
         <div
           className="
-            absolute z-[-1]
+            absolute z-[-1] pointer-events-none
             top-60 right-20
             lg:top-50 lg:right-40
             w-[150px] h-[150px]
