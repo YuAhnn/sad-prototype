@@ -34,7 +34,6 @@ export default function AssessmentPage() {
   
   return (
     <>
-    <div className="overflow-x-hidden">
       <NavBar />
 
       <figure className="bg-[#3fb185] w-full min-h-[350px] lg:min-h-[400px] shadow-lg">
@@ -68,7 +67,6 @@ export default function AssessmentPage() {
       </main>
 
       <Footer />
-    </div>
     </>
   );
 }

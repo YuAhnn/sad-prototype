@@ -7,7 +7,7 @@ export default function Shadow( { component } ) {
         </div>
         <div
           className="
-            absolute z-[-1] pointer-events-none
+            absolute z-[-1]
             top-70 left-20
             lg:top-50 lg:left-40
             w-[150px] h-[150px]
@@ -25,7 +25,7 @@ export default function Shadow( { component } ) {
 
         <div
           className="
-            absolute z-[-1] pointer-events-none
+            absolute z-[-1]
             top-60 right-20
             lg:top-50 lg:right-40
             w-[150px] h-[150px]
