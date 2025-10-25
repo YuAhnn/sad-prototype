@@ -20,9 +20,6 @@ export default function Shadow( { component } ) {
             sm:opacity-20
             md:opacity-23
             lg:opacity-26
-            animate-none
-            // [animation-duration:6s]
-            // [animation-timing-function:ease-in]
           "
         ></div>
 
@@ -41,9 +38,6 @@ export default function Shadow( { component } ) {
             sm:opacity-15
             md:opacity-20
             lg:opacity-25
-            animate-none
-            // [animation-duration:6s]
-            // [animation-timing-function:ease-in]
           "
         ></div>
       </div>

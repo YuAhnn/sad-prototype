@@ -19,7 +19,6 @@ export default function Shadow( { component } ) {
             rounded-full bg-[#3fb185]
             blur-[90px] sm:blur-[100px] md:blur-[120px] lg:blur-[200px]
             opacity-50 sm:opacity-20 md:opacity-23 lg:opacity-40 
-            animate-bounce [animation-duration:6s] [animation-timing-function:ease-in]
           ">
           </div>
 
@@ -34,7 +33,6 @@ export default function Shadow( { component } ) {
               rounded-full bg-[#4c65be]
               blur-[90px] sm:blur-[100px] md:blur-[120px] lg:blur-[200px]
               opacity-50 sm:opacity-20 md:opacity-23 lg:opacity-40
-              animate-bounce [animation-duration:6s] [animation-timing-function:ease-in]
             ">
           </div>
       </div>
