@@ -36,17 +36,12 @@ export default function AssessmentPage() {
     <>
       <NavBar />
 
-      <figure className="bg-[#3fb185] w-full min-h-[350px] lg:min-h-[400px] shadow-lg">
-        <div className="relative top-40">
-          <section className="flex flex-col items-center justify-center text-center px-4">
-            <p className="font-black text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white mb-5">
-              TAKE A STEP TOWARD CLARITY
-            </p>
-            <p className="font-bold text-[12px] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white">
-              CHOOSE A TEST — QUICK, FREE, CONFIDENTIAL
-            </p>
-          </section>
-        </div>
+      <figure className="mx-4 sm:mx-8 lg:mx-20 my-10 w-auto min-h-[350px] lg:min-h-[400px] bg-gradient-to-r from-[#3fb185] to-[#2a8f6d] rounded-3xl 
+      shadow-xl flex items-center justify-center text-center px-6 sm:px-10 py-12 hover:scale-[1.01] transition-transform duration-500 ease-in-out">
+        <section>
+          <p className="font-extrabold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-md mb-4">TAKE A STEP TOWARD CLARITY</p>
+          <p className="font-semibold text-gray-200 text-sm sm:text-lg md:text-xl lg:text-2xl">CHOOSE A TEST — QUICK, FREE, CONFIDENTIAL</p>
+        </section>
       </figure>
 
       <main className="flex justify-center min-h-screen mt-10 px-5 py-10">

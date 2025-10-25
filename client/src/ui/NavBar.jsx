@@ -23,7 +23,7 @@ export default function NavBar() {
     }
 
   return (
-    <nav className="relative flex items-center justify-between h-[80px] w-full bg-[#f9f9f9] px-2 sm:px-4 md:px-4 lg:px-1 xl:px-40 p-18">
+    <nav className="relative flex items-center justify-between h-[80px] w-full bg-[#f9f9f9] px-2 sm:px-4 md:px-4 lg:px-1 xl:px-20 p-18">
      <div className="flex-0.5">
       <Link to="/">
         <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 transition-transform duration-200 hover:scale-[.95] active:scale-[.95]" />
@@ -52,7 +52,7 @@ export default function NavBar() {
       <div className="flex-0.5">
         <div className="flex justify-evenly items-center">
           <div className="ml-4 mr-4">
-            <Link to="/about" className="hidden lg:block bg-[#3fb185] text-white px-4 py-3 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] active:-scale-200">About</Link>
+            <Link to="/about" className="hidden lg:block bg-[#3fb185] text-white px-4 py-3 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] active:scale-95 active:opacity-90 touch-manipulation">About</Link>
           </div>
           <div className="mr-5">
             <button onClick={handleTheme} className="hidden md:block active:-scale-150 hover:shadow-md bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
