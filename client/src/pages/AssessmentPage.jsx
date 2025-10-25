@@ -34,10 +34,10 @@ export default function AssessmentPage() {
   
   return (
     <>
-    <div className="flex flex-col min-h-screen w-full overflow-x-hidden overflow-y-auto">
+    <div className="overflow-x-hidden">
       <NavBar />
 
-      <figure className="bg-[#3fb185] w-screen min-h-[350px] lg:min-h-[400px] shadow-lg">
+      <figure className="bg-[#3fb185] w-full min-h-[350px] lg:min-h-[400px] shadow-lg">
         <div className="relative top-40">
           <section className="flex flex-col items-center justify-center text-center px-4">
             <p className="font-black text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white mb-5">
@@ -51,7 +51,7 @@ export default function AssessmentPage() {
       </figure>
 
       <main className="flex justify-center min-h-screen mt-10 px-5 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  max-w-[90rem] mx-auto">
           {tools.map((tool) => (
             <Card
               key={tool.toolId}
