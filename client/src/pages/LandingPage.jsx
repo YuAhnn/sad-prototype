@@ -4,8 +4,8 @@ import NavBar from "../ui/NavBar"
 import AboutSection from "../ui/AboutSection"
 import SecondHero from "../ui/SecondHero"
 import Footer from "../ui/Footer"
-import Shadow from '../components/Shadow'
-import ShadowBottom from '../components/ShadowBottom'
+import Shadow from '../components/background/Shadow'
+import ShadowBottom from '../components/background/ShadowBottom'
 
 export default function LandingPage() {
     return(

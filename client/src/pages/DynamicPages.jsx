@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchToolByToolId } from "../firebase/db";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
-import Form from "../components/Form";
+import Form from "../components/Form/Form";
 
 export default function DynamicPages() {
   const { toolId } = useParams();

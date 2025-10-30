@@ -36,7 +36,7 @@ export default function AssessmentPage() {
     <>
       <NavBar />
 
-      <figure className="mx-4 sm:mx-8 lg:mx-20 my-10 w-auto min-h-[350px] lg:min-h-[400px] bg-gradient-to-r from-[#3fb185] to-[#2a8f6d] rounded-3xl 
+      <figure className="mx-4 sm:mx-8 lg:mx-20 my-10 w-auto min-h-[350px] lg:min-h-[400px] bg-linear-to-r from-[#3fb185] to-[#2a8f6d] rounded-3xl 
       shadow-xl flex items-center justify-center text-center px-6 sm:px-10 py-12 hover:scale-[1.01] transition-transform duration-500 ease-in-out">
         <section>
           <p className="font-extrabold text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-md mb-4">TAKE A STEP TOWARD CLARITY</p>
@@ -45,7 +45,7 @@ export default function AssessmentPage() {
       </figure>
 
       <main className="flex justify-center min-h-screen mt-10 px-5 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  max-w-[90rem] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  max-w-360 mx-auto">
           {tools.map((tool) => (
             <Card
               key={tool.toolId}
