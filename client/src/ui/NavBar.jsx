@@ -23,7 +23,7 @@ export default function NavBar() {
     }
 
   return (
-    <nav className="relative flex items-center justify-between h-[80px] w-full bg-[#f9f9f9] px-2 sm:px-4 md:px-4 lg:px-1 xl:px-20 p-18">
+    <nav className="relative flex items-center justify-between h-20 w-full bg-[#f9f9f9] px-2 sm:px-4 md:px-4 lg:px-1 xl:px-20 p-18">
      <div className="flex-0.5">
       <Link to="/">
         <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 transition-transform duration-200 hover:scale-[.95] active:scale-[.95]" />
@@ -55,7 +55,7 @@ export default function NavBar() {
             <Link to="/about" className="hidden lg:block bg-[#3fb185] text-white px-4 py-3 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] active:scale-95 active:opacity-90 touch-manipulation">About</Link>
           </div>
           <div className="mr-5">
-            <button onClick={handleTheme} className="hidden md:block active:-scale-150 hover:shadow-md bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border-1 border-gray-400">
+            <button onClick={handleTheme} className="hidden md:block active:-scale-150 hover:shadow-md bg-white p-2 rounded-full cursor-pointer transition duration-300 ease-in-out border border-gray-400">
             {theme ? <Moon  size={25} /> : <Sun size={25} />}
           </button>
           </div>
@@ -63,8 +63,8 @@ export default function NavBar() {
           {sideBar ?  <X size={25}/> : <Menu size={25}/>}
           </div>
           {/* sideBar */}
-          <div className={`fixed z-[120] top-0 w-[70%] h-full border-r border-r-gray-300 rounded-r-4xl bg-[#ffffff] ease-in-out duration-700
-                          ${sideBar ? 'left-0' : 'left-[-100%]'} lg:hidden `}>
+          <div className={`fixed z-120 top-0 w-[70%] h-full border-r border-r-gray-300 rounded-r-4xl bg-[#ffffff] ease-in-out duration-700
+                          ${sideBar ? 'left-0' : `-left-full`} lg:hidden `}>
             <div className="mt-10 ml-1">
               <Link to="/">
                 <img src={logo} alt="Compass" className="w-[245px] h-auto pb-2 active:scale-[.95]" />
@@ -74,7 +74,7 @@ export default function NavBar() {
               {NavLinks.map((link, index) => (
                 <li key={index}>
                   <Link 
-                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white mx-2 py-4 transform active:bg-[#3fb185] active:text-white rounded-full mb-2 border-1 border-gray-300 shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)]">
+                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-[#3fb185] hover:text-white mx-2 py-4 transform active:bg-[#3fb185] active:text-white rounded-full mb-2 border border-gray-300 shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)]">
                    
                     <div className="flex justify-start items-center">
                       <div>{link.logo}</div>
@@ -84,14 +84,14 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white  mx-2 py-4 rounded-full border-1 border-gray-300 transform shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)] text-[#201f1fe0]">
+             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-[#3fb185] active:bg-[#3fb185] active:text-white  hover:text-white  mx-2 py-4 rounded-full border border-gray-300 transform shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)] text-[#201f1fe0]">
               <div className="flex justify-start items-center">
                 <div> <CircleQuestionMark size={30} /> </div>
                 <div className="ml-6">About</div>
               </div>
             </Link>
               <aside className="absolute bottom-10 left-5">
-                <button onClick={handleTheme} className="block active:-scale-150 hover:shadow-md bg-white  p-2 rounded-full cursor-pointer transition ease-in-out border-1 border-gray-400">
+                <button onClick={handleTheme} className="block active:-scale-150 hover:shadow-md bg-white  p-2 rounded-full cursor-pointer transition ease-in-out border border-gray-400">
                   {theme ? <Moon  size={30} /> : <Sun size={30} />}
                 </button>
               </aside>
