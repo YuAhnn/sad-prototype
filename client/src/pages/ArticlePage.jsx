@@ -1,7 +1,7 @@
-import NavBar from '../ui/NavBar'
-import Footer from '../ui/Footer'
-import Btn from '../components/Btn'
-import ArticleCard from '../components/ArticleCard'
+import NavBar from '../components/ui/NavBar'
+import Footer from '../components/ui/Footer'
+import Btn from '../components/ui/Btn'
+import ArticleCard from '../components/cards/ArticleCard'
 
 //only example content:))
 const sample = [

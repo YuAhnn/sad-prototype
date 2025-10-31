@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchToolByToolId } from "../firebase/db";
-import Loading from "../components/Loading";
-import Error from "../components/Error";
+import Loading from "../components/ui/Loading";
+import Error from "../components/ui/Error";
 import Form from "../components/Form/Form";
 
 export default function FormPages() {

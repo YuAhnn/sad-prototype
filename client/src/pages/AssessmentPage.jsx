@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import NavBar from '../ui/NavBar';
-import Footer from '../ui/Footer';
-import Loading from '../components/Loading'
-import Error from '../components/Error';
+import NavBar from '../components/ui/NavBar';
+import Footer from '../components/ui/Footer';
+import Loading from '../components/ui/Loading'
+import Error from '../components/ui/Error';
 import Photo from '../assets/illus.png';
-import Card from '../components/Card';
+import Card from '../components/cards/Card';
 import { fetchTests } from '../firebase/db'
 
 export default function AssessmentPage() {

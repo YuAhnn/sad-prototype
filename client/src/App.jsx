@@ -6,7 +6,7 @@ import AssessmentPage from "./pages/AssessmentPage"
 import FormPages from "./pages/FormPages"
 import ReferralPage from "./pages/ReferralPage"
 import AboutPage from "./pages/AboutPage"
-import Error from "./components/Error"
+import Error from "./components/ui/Error"
 
 export default function App() {
   return(

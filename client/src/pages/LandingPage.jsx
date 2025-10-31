@@ -1,9 +1,9 @@
-import BentoGrid from "../ui/BentoGrid"
-import Hero from "../ui/Hero"
-import NavBar from "../ui/NavBar"
-import AboutSection from "../ui/AboutSection"
-import SecondHero from "../ui/SecondHero"
-import Footer from "../ui/Footer"
+import BentoGrid from "../components/ui/BentoGrid"
+import Hero from "../components/ui/Hero"
+import NavBar from "../components/ui/NavBar"
+import AboutSection from "../components/ui/AboutSection"
+import SecondHero from "../components/ui/SecondHero"
+import Footer from "../components/ui/Footer"
 import Shadow from '../components/background/Shadow'
 import ShadowBottom from '../components/background/ShadowBottom'
 

@@ -1,4 +1,4 @@
-import AboutLogo from '../assets/about-us.png'
+import AboutLogo from '../../assets/about-us.png'
 import { Link } from 'react-router-dom'
 
 export default function AboutSection() {
@@ -17,7 +17,7 @@ export default function AboutSection() {
                 </div>
                 <Link to="/about" className="bg-[#3fb185] text-white w-[200px] rounded-full font-medium text-center mt-6 mx-auto md:mx-0 py-3 cursor-pointer hover:bg-[#daefe6] hover:text-[#3fb185] transition-transform duration-300 hover:scale-[1.03] active:bg-[#daefe6] active:text-[#3fb185] active:scale-95 active:opacity-90 touch-manipulation">Learn More</Link>
             </div>
-            <img src={AboutLogo} alt="/compass"   className="relative z-[-1] cursor-pointer w-[350px] sm:w-[400px] lg:w-[500px] mx-auto my-4 rounded-3xl drop-shadow-xl border-gray-200 border-1 "/>
+            <img src={AboutLogo} alt="/compass"   className="relative z-[-1] cursor-pointer w-[350px] sm:w-[400px] lg:w-[500px] mx-auto my-4 rounded-3xl drop-shadow-xl border-gray-200 border "/>
         </div>
     </div>
     ) 
