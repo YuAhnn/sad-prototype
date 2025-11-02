@@ -29,14 +29,14 @@ TEST
 
 - **Start:** 10/18/2025
 - **End:** 10/25/2025
-- **Status** wala pa po
+- **Status** Done!! yet only static/no database, only for sample/prototype
 
 ### 5. Articles Page
 
 - **Task:** Display educational mental health links
 - **Start:** 10/27/2025
 - **End:** 10/29/2025
-- **Status** pending...
+- **Status** Done!! yet only static/no database, only for sample/prototype
 
 ### 6. Referral Page
 
