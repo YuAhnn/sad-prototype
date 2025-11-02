@@ -1,7 +1,7 @@
 import { UserRoundPlus, Newspaper} from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-export default function ReferralPage() {
+export default function Referral() {
   return(
     <>
     <main className="flex items-center justify-center min-h-screen mx-auto">
