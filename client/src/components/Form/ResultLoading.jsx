@@ -1,4 +1,4 @@
-import Loading from "../Loading"
+import Loading from "../ui/Loading"
 
 export default function ResultLoading() {
     return(
