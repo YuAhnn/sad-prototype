@@ -1,16 +1,28 @@
 import ResultCard from './ResultCard'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Referral from './Referral'
 import ShadowNoBorder from '../background/ShadowNoBorder'
+import ResultLoading from './ResultLoading'  //simulate loading:))
 
 export default function ResultPage( { interpretation, feedback } ){
     const [isClick, setClick] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     const handleSetClick = () => {
         setClick(true)
     }
 
+    useEffect(() => { 
+        const timer = setTimeout(() => {
+            setLoading(false)
+        }, 3000)
+
+        return () => clearTimeout(timer)
+    }, [])
+
+
     if (isClick) return <Referral/>
+    if (loading) return <ResultLoading/> 
 
     return(
         <>
