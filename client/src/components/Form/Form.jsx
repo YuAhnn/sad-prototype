@@ -2,16 +2,24 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import { ChevronLeft } from "lucide-react"
 
+import ResultPage from './ResultPage' //try this component
+
 export default function Form({ assessment }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
+
+  const [isSubmit, setIsSubmit] = useState(false) //sample: not official
 
   const handleSelect = (value) => {
     setAnswers((prev) => ({ ...prev, [currentQuestion]: value }));
   };
 
   const handleNext = () => {
-      setCurrentQuestion((prev) => prev + 1);
+      if (isLastQuestion) {
+        setIsSubmit(true)  //sample: not official
+      } else {
+        setCurrentQuestion((prev) => prev + 1);
+      }
   };
 
   const navigate = useNavigate()
@@ -28,6 +36,8 @@ export default function Form({ assessment }) {
   const options = Object.entries(assessment.scoring.scale);
   const selected = answers[currentQuestion];
   const isLastQuestion = currentQuestion === assessment.questions.length - 1;
+
+  if (isSubmit) return <ResultPage/> //sample: not official
 
   return (
     <>
