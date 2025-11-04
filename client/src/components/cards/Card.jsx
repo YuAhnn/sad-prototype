@@ -38,7 +38,7 @@ export default function Card({ icon, iconProps = {}, alt, instrument, text, tool
       {/* 🤮🤮🤮*/}
       <Modal isOpen={isOpen} onClose={handleModal}>
 
-        <h3 className="text-base mb-2 border-2 border-[#3FB185] bg-[#DAEFE6] rounded-xl p-4">By clicking <span className='font-bold'>"Agree"</span> you understand that:</h3>
+        <h3 className="text-lg mb-2 p-4">By clicking <span className='font-bold'>"Agree"</span> you understand that:</h3>
         
         <section className="flex justify-between p-2 text-center">
           <div className="flex flex-col items-center border-2 border-gray-300 rounded-xl p-4 w-45 transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:border-[#3FB185] ">
