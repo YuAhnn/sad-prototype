@@ -71,10 +71,7 @@ export default function ArticlePage(){
                         </section>
                     </main>
                 </figure>
-
-                <figure className="relative top-10 my-10 w-auto min-h-[150px] lg:min-h-[200px] bg-linear-to-r from-[#2a8f6d] to-[#3fb185] 
-                shadow-xl flex items-center justify-center text-center px-6 sm:px-10 py-12">
-                </figure>
+                
             <Footer/>
         </>
     )

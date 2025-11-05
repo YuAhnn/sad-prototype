@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom'
 export default function Referral() {
   return(
     <>
-    <main className='bg-gradient-r from-green-600 to-green-400'>
-        <nav className='flex justify-between items-center px-[20%] h-20 '>
-        <div className='flex items-center gap-6'>
-            <UserRoundPlus size={40}/>
+    <nav className='flex justify-between items-center px-[28%] h-20 bg-linear-to-r from-[#3fb185] to-[#2a8f6d] '>
+        <div className='flex items-center gap-6 text-white'>
+            <div className='bg-[#daefe6] p-2 rounded-full'>
+                <UserRoundPlus size={30} className='text-[#3fb185]'/>
+            </div>
             <div>
-                <p>Find Support</p>
+                <p className='font-bold text-lg'>Find Support</p>
             </div>
         </div>
 
@@ -22,31 +23,12 @@ export default function Referral() {
                 <option value="clinic4">Clinic 4</option>
             </select>
         </div>
-        </nav>
-    </main>
-    
+    </nav>
 
     <main className="flex items-center justify-center min-h-screen mx-auto">
 
         <section className="flex flex-col items-center min-h-screen p-4 gap-4">
-            <section className='flex flex-col w-[90vh] border rounded-2xl h-auto p-4'>
-                <div className='flex items-center justify-around '>
-                    <div className='flex-1'>
-                        <UserRoundPlus size={50}/>
-                        <p>Referral</p>
-                    </div>
-
-                    <div className='bg-green-500 flex-1'>
-                        <select name="clinic" id="clinic">
-                            <option value="" disabled selected>Choose clinic</option>
-                            <option value="clinic1">Clinic 1</option>
-                            <option value="clinic2">Clinic 2</option>
-                            <option value="clinic3">Clinic 3</option>
-                            <option value="clinic4">Clinic 4</option>
-                        </select>
-                    </div>
-                </div>
-                
+            <section className='flex flex-col w-[90vh] border rounded-2xl h-auto p-4'>                
                 <div className='h-auto '>
                     <div className="w-auto h-90 bg-gray-200 rounded-xl">
                     </div>

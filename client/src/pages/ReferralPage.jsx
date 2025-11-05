@@ -1,109 +1,58 @@
-// export default function ReferralPage(){
-//     return(
-//         <>
-//         <h1>Referral</h1>
-//         </>
-//     )
-// }
-import { UserRoundPlus, Newspaper} from 'lucide-react'
-import { Link } from 'react-router-dom'
+import NavBar from '../components/ui/NavBar'
+import Footer from '../components/ui/Footer'
+import { UserRoundPlus} from 'lucide-react'
 
-export default function Referral() {
+export default function ReferralPage() {
   return(
-    <>
-        <nav className='flex justify-between items-center px-[28%] h-20 bg-linear-to-r from-[#3fb185] to-[#2a8f6d] '>
-        <div className='flex items-center gap-6 text-white'>
-            <div className='bg-[#daefe6] p-2 rounded-full'>
-                <UserRoundPlus size={30} className='text-[#3fb185]'/>
-            </div>
-            <div>
-                <p className='font-bold text-lg'>Find Support</p>
-            </div>
-        </div>
+  <>
+  <NavBar/> 
 
-        <div>
-            <select name="clinic" id="clinic">
-                <option value="" disabled selected>Choose clinic</option>
-                <option value="clinic1">Clinic 1</option>
-                <option value="clinic2">Clinic 2</option>
-                <option value="clinic3">Clinic 3</option>
-                <option value="clinic4">Clinic 4</option>
-            </select>
-        </div>
-        </nav>
-    
+  <figure className=" my-10 w-auto min-h-[250px] lg:min-h-[300px] bg-linear-to-r from-[#3fb185] to-[#2a8f6d] shadow-xl flex items-center justify-center text-center px-6 sm:px-10 py-12"> </figure>
+    <main className='relative bottom-50 mx-8 sm:mx-16 md:mx-25 lg:mx-40 my-10 w-auto min-h-[90px] lg:min-h-[100px] bg-white rounded-3xl shadow-xl flex items-center justify-center text-center px-6 sm:px-10'>
+        <section>
+            <main className="flex items-center justify-center min-h-screen mx-auto">
+                <section className="flex flex-col items-center min-h-screen p-4 gap-4">
+                    <section className='flex flex-col w-[90vh] border rounded-2xl h-auto p-4'>
+                        <div className='flex items-center justify-around '>
 
-    <main className="flex items-center justify-center min-h-screen mx-auto">
+                            <div className='flex-1'>
+                                <div className='flex flex-col items-center'>
+                                    <UserRoundPlus size={50}/>
+                                    <p>Referral</p>
+                                </div>
+                            </div> 
 
-        <section className="flex flex-col items-center min-h-screen p-4 gap-4">
-            <section className='flex flex-col w-[90vh] border rounded-2xl h-auto p-4'>
-                {/* <div className='flex items-center justify-around '>
-                    <div className='flex-1'>
-                        <UserRoundPlus size={50}/>
-                        <p>Referral</p>
-                    </div>
+                            <div className='bg-green-500 flex-1'>
+                                <select name="clinic" id="clinic">
+                                    <option value="" disabled selected>Choose clinic</option>
+                                    <option value="clinic1">Clinic 1</option>
+                                    <option value="clinic2">Clinic 2</option>
+                                    <option value="clinic3">Clinic 3</option>
+                                    <option value="clinic4">Clinic 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div className='h-auto '>
+                            <div className="w-auto h-90 bg-gray-200 rounded-xl">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </main>  
 
-                    <div className='bg-green-500 flex-1'>
-                        <select name="clinic" id="clinic">
-                            <option value="" disabled selected>Choose clinic</option>
-                            <option value="clinic1">Clinic 1</option>
-                            <option value="clinic2">Clinic 2</option>
-                            <option value="clinic3">Clinic 3</option>
-                            <option value="clinic4">Clinic 4</option>
-                        </select>
-                    </div>
-                </div> */}
-                
-                <div className='h-auto '>
-                    <div className="w-auto h-90 bg-gray-200 rounded-xl">
-                    </div>
-                </div>
-            </section>
-
-
-        <section className='flex justify-between w-[90vh] h-auto gap-4'>
-            <div className='border rounded-2xl flex-1 h-[30vh]'>
-                <div className='flex '>
-                    <div>
-                    <Newspaper size={50}/> 
-                    </div>
-
-                    <div>
-                        <p>Articles</p>
-                        <p>Explore Articles Relevant To Your Experience</p>
-                    </div>
-                </div>
-
-                <div>
-                <p>www.website.com</p>
-                <p>www.website.com</p>
-                <p>www.website.com</p>
-            </div>
-            </div>
-
-
-            <div className='flex-1'>
-            <div className='flex flex-col items-center border rounded-2xl h-[30vh]'>
-                <h1>QUOTE</h1>
-                <div>
-                    <p>Whatever you’re going through, it’s time for deep rest. Let go, breathe, and live, knowing God is with you and sees you.</p>
-                </div>
-            </div>
-            </div>
-
-        </section>
-
-
-        <section>   
-            <div className='flex justify-around w-[90vh] h-auto border rounded-2xl p-4'>
-                <div className='w-70 h-40'>1</div>
-                <div className='w-70 h-40'>2</div>
-                <div className='w-70 h-40'>3</div>
-            </div>
-        </section>
-         <Link to="/assessment" className="bg-[#3fb185] w-[150px] lg:w-[200px] text-[14px] lg:text-[16px]  rounded-full font-medium my-6 py-3 text-white text-center hover:bg-[#daefe6] hover:text-[#3fb185] transition-all duration-200 ease-in-out transform hover:scale-[1.03] active:bg-[#daefe6] active:text-[#3fb185] active:scale-95 active:opacity-90 touch-manipulation">Take Care</Link>
-        </section>
+         </section>
     </main>
+    
+    <figure className="relative top-20 my-10 w-auto min-h-[150px] lg:min-h-[71px] border-t-2 border-gray-300 flex items-center justify-end text-center px-6 sm:px-10 py-8">
+        <main className='flex flex-col items-end gap-10 px-[5%]'>
+            <section className='flex gap-6 border'>
+                <p>EMAILS section</p>
+            </section>
+        </main>
+    </figure>   
+
+    <Footer/>
     </>
   )
 }
