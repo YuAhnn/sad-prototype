@@ -31,6 +31,11 @@ export default function Form({ assessment }) {
       setCurrentQuestion((prev) => prev - 1)
     }
   };
+
+  const progressBar = () => {
+    const progressPercent = (currentQuestion + 1) / assessment.questions.length;
+    return `${progressPercent * 100}%`;
+  };
   
   const question = assessment.questions[currentQuestion];
   const options = Object.entries(assessment.scoring.scale);
@@ -41,11 +46,18 @@ export default function Form({ assessment }) {
 
   return (
     <>
-      <section className="flex justify-start mt-2 h-10 px-[2%] sm:px-[3%] md:px-[15%] lg:px-[25%] xl:px-[%20]pt-4">
+      <section className="flex justify-between items-center mt-2 h-10 px-[2%] sm:px-[3%] md:px-[15%] lg:px-[20%] xl:px-[%28]">
           <button onClick={handleBack} className="text-xl hover:underline cursor-pointer">
             <ChevronLeft size={35}/>
           </button>
-          {/* ProgessBar (×_x）*/}
+          
+          <div className="grow">
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                    <div className="bg-[#3FB185] h-3 rounded-full transition-all duration-700 ease-in-out" 
+                        style={{ width: progressBar() }}>
+                    </div>
+                </div>
+            </div>
       </section>
 
       <main className="flex flex-col items-center max-w-xl mx-auto mt-10 px-4">
