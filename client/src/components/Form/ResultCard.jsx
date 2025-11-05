@@ -1,5 +1,5 @@
 import { MessageSquareText, ClipboardCheck } from "lucide-react"
-import logo from '../../assets/compass-alone.svg'
+import logo from '../../assets/title-logo.svg'
 
 export default function Result( {interpretation = "Moderate Depression", feedback = "Thank you for completing this self-check. Your responses suggest you may be carrying feelings that make daily life more difficult. It’s okay to feel this way, and you don’t have to face it alone. If you have someone you trust, sharing how you feel can bring relief. If not, there are still safe places—such as helplines, supportive communities, or quiet moments of prayer—where comfort and strength can be found."}) {
 
@@ -9,7 +9,7 @@ export default function Result( {interpretation = "Moderate Depression", feedbac
         <section className="flex flex-col items-center justify-center mb-15 sm:mb-20 md:mb-30 lg:mb-40">
 
           <main className="flex flex-col items-center max-w-xl mx-auto mt-10 px-4">
-              <img src={logo} alt="" className="relative left-22 sm:left-30 md:left-30 lg:left-30"/>
+              <img src={logo} alt="" className="w-25"/>
               <p className="mt-2 text-xl sm:text-xl md:text-2xl lg:text-3xl text-[#094509] font-bold">SELF-ASSESSMENT RESULT</p>
               <p className="mt-2 text-[15px] sm:text-[16px] md:text-lg lg:text-lg mb-12 text-[#8f8787] italic">A moment to reflect</p>
           </main>

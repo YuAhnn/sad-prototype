@@ -4,6 +4,28 @@ import { Link } from 'react-router-dom'
 export default function Referral() {
   return(
     <>
+    <main className='bg-gradient-r from-green-600 to-green-400'>
+        <nav className='flex justify-between items-center px-[20%] h-20 '>
+        <div className='flex items-center gap-6'>
+            <UserRoundPlus size={40}/>
+            <div>
+                <p>Find Support</p>
+            </div>
+        </div>
+
+        <div>
+            <select name="clinic" id="clinic">
+                <option value="" disabled selected>Choose clinic</option>
+                <option value="clinic1">Clinic 1</option>
+                <option value="clinic2">Clinic 2</option>
+                <option value="clinic3">Clinic 3</option>
+                <option value="clinic4">Clinic 4</option>
+            </select>
+        </div>
+        </nav>
+    </main>
+    
+
     <main className="flex items-center justify-center min-h-screen mx-auto">
 
         <section className="flex flex-col items-center min-h-screen p-4 gap-4">

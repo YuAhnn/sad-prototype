@@ -63,7 +63,7 @@ export default function NavBar() {
           {sideBar ?  <X size={25}/> : <Menu size={25}/>}
           </div>
           {/* sideBar */}
-          <div className={`fixed z-120 top-0 w-[50%] h-full border-r border-r-gray-300 rounded-r-4xl bg-[#ffffff] ease-in-out duration-700
+          <div className={`fixed z-120 top-0 w-[60%] h-full border-r border-r-gray-300 rounded-r-4xl bg-[#ffffff] ease-in-out duration-700
                           ${sideBar ? 'left-0' : `-left-full`} lg:hidden `}>
             <div className="mt-10 ml-1">
               <Link to="/">
