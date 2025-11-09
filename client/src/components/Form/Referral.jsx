@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 export default function Referral() {
   return(
     <>
-    <nav className='flex justify-between items-center px-[28%] h-20 bg-linear-to-r from-[#3fb185] to-[#2a8f6d] '>
+    <nav className='flex justify-between items-center px-[28%] h-20 bg-linear-to-r from-primary-color to-[#2a8f6d] '>
         <div className='flex items-center gap-6 text-white'>
             <div className='bg-[#daefe6] p-2 rounded-full'>
-                <UserRoundPlus size={30} className='text-[#3fb185]'/>
+                <UserRoundPlus size={30} className='text-primary-color'/>
             </div>
             <div>
                 <p className='font-bold text-lg'>Find Support</p>

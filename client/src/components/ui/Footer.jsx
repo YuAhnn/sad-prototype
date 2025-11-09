@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <>
-    <figure className="relative top-10 my-10 w-auto h-30 bg-linear-to-r from-[#2a8f6d] to-[#3fb185] shadow-xl flex items-center justify-center text-center px-6 sm:px-10 py-12">
+    <figure className="relative top-10 my-10 w-auto h-30 bg-linear-to-r from-[#2a8f6d] to-primary-color shadow-xl flex items-center justify-center text-center px-6 sm:px-10 py-12">
       <button onClick={toTop} className="flex items-center justify-center p-3 rounded-full bg-white/10 text-white shadow-md transition-all duration-300 ease-in-outhover:bg-white/20 hover:shadow-2xl hover:-translate-y-1.5 hover:scale-110 active:scale-95 cursor-pointer">
       <CircleChevronUp size={50} className="transition-transform duration-300 ease-in-out"/>
       </button>

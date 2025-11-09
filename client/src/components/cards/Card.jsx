@@ -25,7 +25,7 @@ export default function Card({ icon, iconProps = {}, alt, instrument, text, tool
         <p className="text-sm text-gray-600 mb-4">{text}</p>
 
         <div>
-          <button onClick={handleModal} className="bg-[#3fb185] text-white px-13 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] active:scale-[1.05] active:bg-[#daefe6] active:text-[#3fb185] cursor-pointer">
+          <button onClick={handleModal} className="bg-primary-color text-white px-13 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-primary-color active:scale-[1.05] active:bg-[#daefe6] active:text-primary-color cursor-pointer">
             {buttonText}
           </button>
         </div>
@@ -63,7 +63,7 @@ export default function Card({ icon, iconProps = {}, alt, instrument, text, tool
         </section>
 
         <div className="flex justify-center w-full mt-9">
-          <Link to={toolId} onClick={handleModal} className="bg-[#3fb185] text-white px-30 py-4 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-[#3fb185] hover:scale-[1.06] active:bg-[#daefe6] active:text-[#3fb185]">
+          <Link to={toolId} onClick={handleModal} className="bg-primary-color text-white px-30 py-4 rounded-full transition-all duration-300 ease-in-out hover:bg-[#daefe6] hover:text-primary-color hover:scale-[1.06] active:bg-[#daefe6] active:text-primary-color">
             Agree
           </Link>
         </div>

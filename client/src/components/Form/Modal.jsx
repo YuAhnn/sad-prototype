@@ -7,7 +7,7 @@ export default function Modal({ isOpen, onClose, children }) {
   return (
     <main className=" flex items-center justify-center fixed inset-0 backdrop-blur-lg bg-black/40 min-h-screen min-w-full z-1">
       <section>
-        <section className="relative bg-linear-to-r from-[#2a8f6d] to-[#3fb185] rounded-tr-2xl rounded-tl-2xl shadow-xl w-full max-w-2xl mx-auto p-10">
+        <section className="relative bg-linear-to-r from-[#2a8f6d] to-primary-color rounded-tr-2xl rounded-tl-2xl shadow-xl w-full max-w-2xl mx-auto p-10">
           <div className="flex gap-4 items-center">
 
             <div className='flex-10'>            

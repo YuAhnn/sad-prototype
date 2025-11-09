@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-color: #3fb185;
+}
+
+
 @font-face {
   font-family: 'Inter';
   src: url('/src/assets/fonts/Inter_28pt-Regular.ttf') format('truetype');
