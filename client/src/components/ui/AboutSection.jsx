@@ -1,4 +1,6 @@
-import AboutLogo from '../../assets/about-us.png'
+// import AboutLogo from '../../assets/about-us.png'
+import Compass from '../../assets/compass-about.png'
+import Paper from '../../assets/paper.png'
 import { Link } from 'react-router-dom'
 
 export default function AboutSection() {
@@ -23,7 +25,13 @@ export default function AboutSection() {
                     Learn More
                 </Link>
             </div>
-            <img src={AboutLogo} alt="/compass"   className="relative z-[-1] cursor-pointer w-[350px] sm:w-[400px] lg:w-[500px] mx-auto my-4 rounded-3xl drop-shadow-xl border-gray-200 border "/>
+             <div className="relative mt-30 sm:mt-20 md:mt-0 lg:mt-0  flex justify-center items-center">
+                <img src={Compass} alt="Compass" className="relative z-20 cursor-pointer w-[400px] sm:w-[500px] md:w-[500px] lg:w-[450px] xl:w-[500px] 
+                transition-transform duration-300 hover:scale-105"/>
+                
+                <img src={Paper} alt="Paper" className="absolute top-[50%] left-[70%] sm:left-[70%] md:left-[70%] lg:left-[90%] -translate-x-1/2 z-20 cursor-pointer 
+                w-[400px] sm:w-[500px] md:w-[450px] lg:w-[500px] xl:w-[600px] transition-transform duration-300 hover:scale-105"/>
+            </div>
         </div>
     </div>
     ) 
