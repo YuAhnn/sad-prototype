@@ -8,7 +8,7 @@ const NavLinks = [
   { label: "Assessments", path: '/assessment', logo: <FileCheck  size={30}/>},
   { label: "Referral", path: '/referral', logo: <UserRoundPlus  size={30}/> }
 ];
-
+// refactor Nav component: separate the sideBar
 export default function NavBar() {
 
     const[theme, setTheme] = useState(false)
@@ -59,10 +59,10 @@ export default function NavBar() {
             {theme ? <Moon  size={25} /> : <Sun size={25} />}
           </button>
           </div>
-          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-150 hover:shadow-md active:bg-primary-color hover:primary-color hover:text-white p-2 rounded-full duration-300 ease-in-out">
+          <div onClick={handleSideBar} className="block lg:hidden mr-5 cursor-pointer transform active:-scale-150 hover:shadow-md active:bg-primary-color hover:bg-primary-color hover:text-white p-2 rounded-full duration-300 ease-in-out">
           {sideBar ?  <X size={25}/> : <Menu size={25}/>}
           </div>
-          {/* sideBar */}
+          {/* sideBar */} 
           <div className={`fixed z-120 top-0 w-[60%] h-full border-r border-r-gray-300 rounded-r-4xl bg-[#ffffff] ease-in-out duration-700
                           ${sideBar ? 'left-0' : `-left-full`} lg:hidden `}>
             <div className="mt-10 ml-1">

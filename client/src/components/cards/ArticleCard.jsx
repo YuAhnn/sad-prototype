@@ -8,11 +8,17 @@ export default function ArticleCard({ img, title, link, text, source }) {
             </div>
 
             <main className="flex flex-col items-start p-4 lg:p-6 grow">
-                <a href={link} target="_blank" className="font-bold text-xl sm:text-2xl text-[#253267] drop-shadow-md mb-2 sm:mb-3 transition duration-200 ease-in-out hover:underline hover:decoration-[#8791b9] hover:underline-offset-4 active:underline active:decoration-[#8791b9] active:underline-offset-4 line-clamp-2">
+                <a href={link} target="_blank" className="font-bold text-xl sm:text-2xl text-[#253267] drop-shadow-md mb-2 sm:mb-3 
+                                                transition duration-200 ease-in-out hover:underline hover:decoration-[#8791b9] hover:underline-offset-4 
+                                                active:underline active:decoration-[#8791b9] active:underline-offset-4 line-clamp-2">
                     {title}
                 </a>
-                    <p className="text-sm sm:text-[18px] text-justify text-[#333333] mt-6 line-clamp-5 sm:line-clamp-3">{text}</p>
-                    <p className="text-[#666666] mt-auto text-xs lg:text-sm">{source}</p>
+                    <p className="text-sm sm:text-[18px] text-justify text-[#333333] mt-6 line-clamp-5 sm:line-clamp-3">
+                        {text}
+                    </p>
+                    <p className="text-[#666666] mt-auto text-xs lg:text-sm">
+                        {source}
+                    </p>
             </main>
         </figure>
      </div>

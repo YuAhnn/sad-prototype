@@ -16,15 +16,20 @@ export default function Modal({ isOpen, onClose, children }) {
                 <ShieldCheck size={40} className='text-white'/>
               </figure>
               <div >
-                <h2 className="text-2xl font-bold text-white">Before You Start</h2>
-                <h2 className="text-md text-white">Please review important information</h2>
+                <h2 className="text-2xl font-bold text-white">
+                  Before You Start
+                </h2>
+                <h2 className="text-md text-white">
+                  Please review important information
+                </h2>
               </div>
               </div>
             </div>
 
             <div className='flex-1'>
                 <button onClick={onClose}>
-                <X className="w-8 h-8 text-white transition-all duration-300 ease-in-out hover:scale-110 hover:text-black hover:bg-gray-100 hover:shadow-md rounded-full cursor-pointer p-1" />
+                <X className="w-8 h-8 text-white transition-all duration-300 ease-in-out hover:scale-110 hover:text-black
+                            hover:bg-gray-100 hover:shadow-md rounded-full cursor-pointer p-1" />
               </button>
             </div>
           </div>

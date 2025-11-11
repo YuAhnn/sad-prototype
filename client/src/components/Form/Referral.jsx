@@ -61,7 +61,9 @@ export default function Referral() {
             <div className='flex flex-col items-center border rounded-2xl h-[30vh]'>
                 <h1>QUOTE</h1>
                 <div>
-                    <p>Whatever you’re going through, it’s time for deep rest. Let go, breathe, and live, knowing God is with you and sees you.</p>
+                    <p>Whatever you’re going through, it’s time for deep rest. Let go, breathe, and live, 
+                    knowing God is with you and sees you.
+                    </p>
                 </div>
             </div>
             </div>

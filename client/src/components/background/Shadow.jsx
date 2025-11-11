@@ -14,12 +14,12 @@ export default function Shadow( { component } ) {
             sm:w-[250px] sm:h-[250px]
             md:w-[350px] md:h-[350px]
             lg:w-[450px] lg:h-[450px]
-            rounded-full primary-color
+            rounded-full bg-primary-color
             blur-[90px] sm:blur-[100px] md:blur-[120px] lg:blur-[200px]
             opacity-20
             sm:opacity-20
             md:opacity-23
-            lg:opacity-26
+            lg:opacity-35
           "
         ></div>
 
@@ -37,7 +37,7 @@ export default function Shadow( { component } ) {
             opacity-40
             sm:opacity-15
             md:opacity-20
-            lg:opacity-25
+            lg:opacity-35
           "
         ></div>
       </div>
