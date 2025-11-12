@@ -5,6 +5,7 @@ import AboutSection from "../components/ui/AboutSection"
 import Footer from "../components/ui/Footer"
 import Shadow from '../components/background/Shadow'
 import ShadowBottom from '../components/background/ShadowBottom'
+import logo from '.././assets/title-logo.svg'
 
 export default function LandingPage() {
     return(
@@ -20,6 +21,9 @@ export default function LandingPage() {
           />
           <BentoGrid />
           <AboutSection /> 
+          <div className="absolute w-full">
+             <img src={logo} alt="compass" className="absolute top-80 lg:top-60 left-1/2 transform -translate-x-1/2 w-40 sm:w-60 lg:w-80" />
+          </div>
           <ShadowBottom component={<Hero 
           text1="Let's start your" 
           text2="Wellness Journey" 
