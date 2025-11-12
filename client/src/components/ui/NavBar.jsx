@@ -32,13 +32,13 @@ export default function NavBar() {
 
       <div className="flex-2">
        <div className="flex justify-center">
-         <div className="bg-white mr-20 px-2 py-6 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
+         <div className="bg-white mr-20 px-2 py-3 hidden lg:block lg:w-[550px] rounded-full drop-shadow-sm">
 
           <ul className="flex justify-evenly items-center">
           {NavLinks.map((link, index) => (
             <li key={index}>
               <Link 
-                to={link.path} className="transition duration-350 ease-in-out hover:bg-primary-color active:bg-primary-color active:text-white hover:text-white px-4 py-4 rounded-full transform">
+                to={link.path} className="inline-block duration-400 ease-in-out hover:bg-primary-color active:bg-primary-color active:text-white hover:text-white px-4 py-4 rounded-full transform hover:scale-105">
                 {link.label}
               </Link>
             </li>
