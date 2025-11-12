@@ -1,7 +1,7 @@
 import { MessageSquareText, ClipboardCheck } from "lucide-react"
 import logo from '../../assets/title-logo.svg'
 
-export default function Result( {interpretation = "Moderate Depression", feedback = "Thank you for completing this self-check. Your responses suggest you may be carrying feelings that make daily life more difficult. It’s okay to feel this way, and you don’t have to face it alone. If you have someone you trust, sharing how you feel can bring relief. If not, there are still safe places—such as helplines, supportive communities, or quiet moments of prayer—where comfort and strength can be found."}) {
+export default function Result( {interpretation, feedback = "Thank you for completing this self-check. Your responses suggest you may be carrying feelings that make daily life more difficult. It’s okay to feel this way, and you don’t have to face it alone. If you have someone you trust, sharing how you feel can bring relief. If not, there are still safe places—such as helplines, supportive communities, or quiet moments of prayer—where comfort and strength can be found."}) {
 
   return (
     <>
