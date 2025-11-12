@@ -74,7 +74,7 @@ export default function NavBar() {
               {NavLinks.map((link, index) => (
                 <li key={index}>
                   <Link 
-                    to={link.path} className="block pl-8 transition duration-400 ease-in-out hover:bg-primary-color hover:text-white mx-2 py-4 transform active:bg-primary-color active:text-white rounded-full mb-2 border border-gray-300 shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)]">
+                    to={link.path} className="block pl-8 transition-all duration-400 ease-in-out hover:bg-primary-color hover:text-white mx-2 py-4 transform active:bg-primary-color active:text-white rounded-full mb-2 border border-gray-300 shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)] hover:scale-105 active:scale-105">
                    
                     <div className="flex justify-start items-center">
                       <div>{link.logo}</div>
@@ -84,7 +84,7 @@ export default function NavBar() {
                 </li>
               ))}
             </ul>
-             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-primary-color active:bg-primary-color active:text-white  hover:text-white  mx-2 py-4 rounded-full border border-gray-300 transform shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)] text-[#201f1fe0]">
+             <Link to="/about" className="block pl-8 transition duration-300 ease-in-out hover:bg-primary-color active:bg-primary-color active:text-white  hover:text-white  mx-2 py-4 rounded-full border border-gray-300 transform shadow-[inset_0_4px_12px_rgba(0,0,0,0.1)] text-[#201f1fe0] hover:scale-105 active:scale-105">
               <div className="flex justify-start items-center">
                 <div> <CircleQuestionMark size={30} /> </div>
                 <div className="ml-6">About</div>
