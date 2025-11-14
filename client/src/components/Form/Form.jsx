@@ -70,7 +70,7 @@ export default function Form({ assessment }) {
 
   // if (isSubmit) return <ResultPage interpretation={result}/> //sample: not official
   if (isCalculate) return <ResultLoading />
-  if (result) return <ResultPage interpretation={result.result} />
+  if (!isCalculate && result) return <ResultPage interpretation={result.result} />
 
   return (
     <>
