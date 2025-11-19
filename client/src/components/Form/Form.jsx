@@ -1,25 +1,23 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import { ChevronLeft } from "lucide-react"
 import ResultLoading from '../Form/ResultLoading'
-import ResultPage from './ResultPage' //try this component
+import ResultPage from './ResultPage' 
 
 export default function Form({ assessment }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null)
-  const [isCalculate, setCalculate] = useState(false)
-  // const [isSubmit, setIsSubmit] = useState(false) //sample: not official
+  const [isLoading, setIsLoading] = useState(false)
+  const [score, setScore] = useState(null)
 
   const handleSelect = (value) => {
     setAnswers((prev) => ({ ...prev, [currentQuestion]: value }));
   };
 
-  // console.log(answers)//for debug
-
   const handleNext = () => {
       if (isLastQuestion) {
-        setCalculate(true)
+        userResult()
       } else {
         setCurrentQuestion((prev) => prev + 1);
       }
@@ -40,37 +38,34 @@ export default function Form({ assessment }) {
     return `${progressPercent * 100}%`;
   };
 
-  useEffect(() => {
-    if (!isCalculate) return; 
+  const userResult = () => {
+    setIsLoading(true)
 
-    let total = 0;
-
-    for (let key in answers) {
-      total += Number(answers[key]);
-    }
-  
-  const interpretation = assessment.result.find(
-    (range) => total >= range.min && total <= range.max
-  )
-
-  setResult(interpretation);
-
-  const timer = setTimeout(() => {  
-    setCalculate(false);
-  }, 3000)
-  
-  return () => clearTimeout(timer)
-
-  }, [isCalculate, answers, assessment.result]);
+    let total = 0
+    
+    Object.values(answers).forEach((value) => {
+      total += Number(value)
+    })
+    
+    setScore(total)
+    
+    let interpretation = assessment.result.find((range) => {
+      return total >= range.min && total <= range.max
+    })
+    
+    setTimeout(() => {
+      setResult(interpretation)
+      setIsLoading(false)
+    }, 1430)
+  };
 
   const question = assessment.questions[currentQuestion]
   const options = Object.entries(assessment.scoring.scale)
   const selected = answers[currentQuestion];
   const isLastQuestion = currentQuestion === assessment.questions.length - 1
 
-  // if (isSubmit) return <ResultPage interpretation={result}/> //sample: not official
-  if (isCalculate) return <ResultLoading />
-  if (!isCalculate && result) return <ResultPage interpretation={result.result} />
+  if (isLoading) return <ResultLoading />
+  if (result !== null) return <ResultPage interpretation={result.result} />
 
   return (
     <>
