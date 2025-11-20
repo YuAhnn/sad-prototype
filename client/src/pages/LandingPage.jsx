@@ -12,9 +12,9 @@ export default function LandingPage() {
         <>
         <NavBar />
           <Shadow component={<Hero 
-            text1="Guiding Your Emotional" 
-            text2="Wellness Journey" 
-            description="Compass delivers support and emotional guidance for your well-being" 
+            text1="Understand Your Mind" 
+            text2="and Emotions Better" 
+            description="Explore and reflect on your mental and emotional well-being—private, self-guided, and educational space." 
             label="Begin Assessment" 
             link="/assessment" 
             />} 
